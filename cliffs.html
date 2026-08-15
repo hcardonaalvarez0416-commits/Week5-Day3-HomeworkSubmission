@@ -1,10 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <title>Great Cliffs</title>
+    
+     <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body id="cliffs">
@@ -15,24 +23,38 @@
 
 
 
-        <header>
+        <!-- Header & Navigation -->
+    <header class="header-section">
+      <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+        </a>
 
+        <!-- Hamburger button (visible on tablet and mobile) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="main-header">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-
-                </div>
-            </div>
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="cliffs.html"></a>Cliffs</li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cliffs.html">CLIFFS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activities.html">ACTIVITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
 
         <main>
@@ -74,60 +96,57 @@
                        
         </main>
 
-        <section>
-            <ul id="partners">
-                <!-- <li class="partner">
-                    <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                </li> -->
-            </ul>
-        </section>
+         <!-- Responsive Partner Logos Section -->
+    <section class="partners-section py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-bustour.png" alt="Bus Tour" class="partner-img">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-cabinrental.png" alt="Cabin Rental" class="partner-img">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-campingadv.png" alt="Camping Adventure" class="partner-img">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-collegetours.png" alt="College Tours" class="partner-img">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-rentalbike.png" alt="Bike Rental" class="partner-img">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center mb-3">
+            <img src="images/partners/partner-tourgroup.png" alt="Tour Group" class="partner-img">
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top py-3">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+          <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
+          <div class="social mt-2 mt-sm-0">
+            <a href="#" class="fa fa-facebook social-btn"></a>
+            <a href="#" class="fa fa-instagram social-btn"></a>
+            <a href="#" class="fa fa-twitter social-btn"></a>
+          </div>
+        </div>
+      </div>
 
-        <footer>
-            <div id="nondisclaimer">
-                <div class="copy"> &copy Copyright 2020 :: GreatCliffs.com</div>
-                <div class="social">
-                    <h3><a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
+      <div class="footer-bottom text-center py-2">
+        <p class="m-0">This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+      </div>
+    </footer>
 
-                    </h3>
-                </div>
-            </div>
+  </div>
 
-            <div id="disclaimer">
-                <p>This website is designed and created solely for educational purposes only at Westcliff University.
-                    All
-                    contents are not intended for any commercial gain or use. </p>
-            </div>
-            <!-- Add icon library -->
-            <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-        </footer>
-
-    </div>
-
-
-<!-- Partners -->
-<script src="js/site_scripts.js"></script>
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="js/digclock.js"></script>
 
 
 </body>
